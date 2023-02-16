@@ -3,7 +3,7 @@ pipeline {
 	stages {
 		stage('checkout'){
 			steps {
-				git 'https://mgiblin@bitbucket.org/cbd23/couponservice.git'
+				git 'https://github.com/321gillian/couponservice2.git'
 			}
 		}
 		stage('Build'){
@@ -21,7 +21,6 @@ pipeline {
 			steps {
 				bat "mvn package"
 			}
-		}		
+		}
 	}
 }
-				
